@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d1d">
+  <title>MUSIQA BILIMDONI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="topbar">
+    <div class="logo">
+      <div class="logo-icon">🎵</div>
+      <div>
+        <h1>MUSIQA <span>BILIMDONI</span></h1>
+        <small>Musiqa asboblarini tani!</small>
+      </div>
+    </div>
+
+    <div class="top-stats">
+      <div class="stat">
+        <span>🏆</span>
+        <div>
+          <small>Ball</small>
+          <strong id="score">0</strong>
+        </div>
+      </div>
+      <div class="stat">
+        <span>🥇</span>
+        <div>
+          <small>Rekord</small>
+          <strong id="record">0</strong>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- BOSHLANG'ICH OYNA -->
+    <section class="screen welcome-screen active" id="welcomeScreen">
+      <div class="welcome-card">
+        <div class="music-art">
+          <div class="floating-note note-one">♪</div>
+          <div class="floating-note note-two">♫</div>
+          <div class="instrument-circle">🎸</div>
+          <div class="mini-instrument">🎹</div>
+          <div class="mini-instrument mini-two">🥁</div>
+        </div>
+
+        <div class="welcome-text">
+          <span class="eyebrow">🎼 MUSIQIY SARGUZASHT</span>
+          <h2>Musiqa asboblarini <span>topa olasanmi?</span></h2>
+          <p>Rasmlarni ko‘r, tovushlarni tingla va to‘g‘ri javobni tanla!</p>
+          <div class="welcome-features">
+            <span>🔊 Tovushlar</span>
+            <span>🏆 Ballar</span>
+            <span>⏱️ Vaqt</span>
+          </div>
+          <button class="primary-btn" id="startBtn">O‘YINNI BOSHLASH <span>➜</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- O'YIN OYNASI -->
+    <section class="screen game-screen" id="gameScreen">
+
+      <div class="game-top">
+        <div class="level-box">
+          <small>BOSQICH</small>
+          <strong id="level">1 / 5</strong>
+        </div>
+
+        <div class="progress-area">
+          <div class="progress-label">
+            <span id="questionNumber">Savol 1 / 20</span>
+            <span id="progressText">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+
+        <div class="timer-box" id="timerBox">
+          <span>⏱️</span>
+          <strong id="timer">20</strong>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <span class="question-label">🎯 TOPSHIRIQ</span>
+        <h2 id="questionTitle">Bu qaysi musiqa asbobi?</h2>
+
+        <div class="instrument-picture" id="instrumentPicture">
+          <div class="picture-glow"></div>
+          <span id="instrumentEmoji">🎸</span>
+        </div>
+
+        <p class="question-description" id="questionDescription">
+          Rasmga qarang va to‘g‘ri javobni tanlang.
+        </p>
+
+        <button class="listen-btn" id="listenBtn">
+          <span>🔊</span> TOVUSHNI TINGLASH
+        </button>
+
+        <div class="answers" id="answers"></div>
+
+        <div class="message" id="message"></div>
+
+        <div class="game-actions">
+          <button class="hint-btn" id="hintBtn">💡 Yordam <span id="hintCount">3</span></button>
+          <button class="exit-btn" id="exitBtn">✕ Chiqish</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- NATIJA OYNASI -->
+    <section class="screen result-screen" id="resultScreen">
+      <div class="result-card">
+        <div class="result-icon" id="resultIcon">🏆</div>
+        <span class="eyebrow">O‘YIN YAKUNLANDI</span>
+        <h2 id="resultTitle">Ajoyib natija!</h2>
+        <p id="resultDescription">Sen juda yaxshi o‘ynading!</p>
+
+        <div class="result-stats">
+          <div>
+            <span>🏆</span>
+            <small>To‘plangan ball</small>
+            <strong id="finalScore">0</strong>
+          </div>
+          <div>
+            <span>✅</span>
+            <small>To‘g‘ri javob</small>
+            <strong id="correctAnswers">0 / 20</strong>
+          </div>
+          <div>
+            <span>🥇</span>
+            <small>Eng yaxshi rekord</small>
+            <strong id="finalRecord">0</strong>
+          </div>
+        </div>
+
+        <button class="primary-btn" id="restartBtn">QAYTA O‘YNASH ↻</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>🎵 MUSIQA BILIMDONI • MUSIC QUIZ GAME</p>
+    <small>Musiqa olamini kashf et!</small>
+    <div class="developer">
+      <span>DEVELOPED BY</span>
+      <strong>Ulug'bek.R</strong>
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
